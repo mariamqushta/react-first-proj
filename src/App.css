@@ -373,11 +373,6 @@ border: #fff !important;
   padding: 0 0;
   font-size: 12px !important;
   color: #757575 !important;
-}
-.s3{
- display: none !important;
+
 }
 
-.a3:active .s3{
- display: block !important;
-}

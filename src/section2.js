@@ -1,22 +1,14 @@
-import {React,useState} from "react";
+import {React,useState,useEffect} from "react";
 import Lottie from "lottie-react";
 import animationData from './assets/Animation - 1726581686538.json';
 const Section2=()=>{
 
 
   const [inp,setinp]=useState({First_Name:"",Last_Name:"",Email_Address:"",Phone_No:"" ,Message:""})
-   
-  const input =() =>{
-  
-    console.log(inp.First_Name)
-    console.log(inp.Last_Name)
-    console.log(inp.Email_Address)
-    console.log(inp.Phone_No)
-    console.log(inp.Message)
-  }
-  input()
-  
-  
+  useEffect(() => {
+    console.log(inp.First_Name, inp.Last_Name, inp.Email_Address, inp.Phone_No, inp.Message);
+  }, [inp.First_Name, inp.Last_Name, inp.Email_Address, inp.Phone_No, inp.Message]);
+
   return(
         <section id="section2" className="mb-4 pb-5 sec2 d-flex justify-content-center">
 
@@ -41,7 +33,7 @@ const Section2=()=>{
       <input type="email" class="form-control text-light inp " placeholder="Email Address" value={inp.Email_Address} onChange={(e)=>setinp({...inp,Email_Address:e.target.value})}/>
     </div>
     <div class="col-sm-6 p-1">
-      <input type="password" class="form-control inp text-light" placeholder="Phone No." value={inp.Phone_No} onChange={(e)=>setinp({...inp,Phone_No:e.target.value})}/>
+      <input type="text" class="form-control inp text-light" placeholder="Phone No." value={inp.Phone_No} onChange={(e)=>setinp({...inp,Phone_No:e.target.value})}/>
     </div>
     <div class="col-sm-12 p-1">
    <textarea class="form-control inp text-light" rows="5" id="comment" placeholder="Message" value={inp.Message} onChange={(e)=>setinp({...inp,Message:e.target.value})} name="text"></textarea>
