@@ -9,14 +9,22 @@ const Header = () => {
   const handleSetActive = (to) => {
     console.log(to);
   };
+  let show =()=>{
+    const mynavbar = document.getElementById("mynavbar")
+    if(mynavbar.classList.contains('show')){
+      mynavbar.classList.remove("show")
+    }else{
+      mynavbar.classList.add("show")
+    }
+  }
 //justify-content-end
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
       <div className="container">
         <h2 className="text-light h2 ms-2">Logo</h2>
         <div className="justify-content-end">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" onClick={show}>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
@@ -38,7 +46,7 @@ const Header = () => {
                 <RouterLink to="/home" className="nav-link mx-3">Home</RouterLink>
               )}
             </li>
-            <li className="nav-item ">
+            <li className="nav-item">
               {location.pathname === '/' ? (
                 <ScrollLink
                   activeClass="active"
@@ -89,12 +97,15 @@ const Header = () => {
                 <FaInstagram className="licon h5 " />
               </a>
             </li>
-            <li className="nav-item">
-              <div className="btnb">
+           
+          </ul>
+          <form class="d-flex">
+          <div className="btnb">
               <button type="button" className="btn p-2 text-light border border-light btn1"><span>Let's connect</span></button>
             </div>
-            </li>
-          </ul>
+      </form>
+            
+           
         </div></div>
       </div>
     </nav>
