@@ -17,7 +17,7 @@ const Home = () => {
   return (
       <div className="mb-0 ">
         <div className="App container-fluid w-100 pb-0 mb-0">
-        <section id="home-section" className="mb-0">
+        <section id="home-section" className="mb-0 container-fluid w-100">
         <div className=" row mt-5 justify-content-center mb-0">
     <div class="col-sm-6 mt-5 ps-5 ">
         <div className="h41 ">

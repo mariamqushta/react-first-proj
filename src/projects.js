@@ -65,7 +65,7 @@ const handleToggleSection2 = () => {
 
 
     return(
-        <section id="projects-section" className="mt-0 pt-2 bg-dark">  
+        <section id="projects-section" className="mt-0 pt-2 bg-dark container-fluid w-100">  
         <div className="rounded-4 container h-25 text-light mt-3">
            <div className="divskill">
             <h2>My Project</h2>

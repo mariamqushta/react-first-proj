@@ -22,7 +22,7 @@ const Skills = () => {
     };
 
     return (
-        <section id="skills-section" className="pb-4 ">
+        <section id="skills-section" className="pb-4 container-fluid w-100">
             <div className="rounded-4 container bg-dark shadow-lg  mb-4  mt-5 pb-3 text-light">
                 <div className="divskill">
                     <h2>Skills</h2>

@@ -19,7 +19,7 @@ const Header = () => {
   }
 //justify-content-end
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-sm container-fluid navbar-dark bg-dark fixed-top">
       <div className="container">
         <h2 className="text-light h2 ms-2">Logo</h2>
         <div className="justify-content-end">

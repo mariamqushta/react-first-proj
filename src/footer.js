@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
 
 return(
-    <div class="container-fluid row bg-dark d-flex justify-content-center">
+    <div class="container-fluid row bg-dark d-flex justify-content-center  w-100">
         <div className="m-auto">
 
         <Email1/>
