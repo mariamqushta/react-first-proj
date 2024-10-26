@@ -15,7 +15,7 @@ const Home = () => {
         deleteSpeed: 100,
     });
   return (
-      <div className="mb-0 ">
+      <div className="mb-0 container-fluid w-100 p-0">
         <div className="App container-fluid w-100 pb-0 mb-0">
         <section id="home-section" className="mb-0 container-fluid w-100">
         <div className=" row mt-5 justify-content-center mb-0">
